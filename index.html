@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dev Bhoomi — Uttarakhand Travel Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="logo" onclick="goTo(1)">
+    Dev Bhoomi
+    <span>Land of the Gods</span>
+  </div>
+  <div class="header-tag">Uttarakhand Travel Guide</div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE 1 — HOME
+══════════════════════════════════════════════════════ -->
+<section class="page active" data-page="1">
+
+  <!-- Full-bleed Home Hero -->
+  <div class="home-hero">
+    <div class="home-hero-badge">Dev Bhoomi · Land of the Gods</div>
+    <h1>Uttarakhand</h1>
+    <p class="home-hero-sub">Where the Himalayas meet the divine</p>
+    <p class="home-hero-desc">
+      India's mountain state — a land of soaring snow peaks, sacred rivers, ancient temples,
+      tiger-filled forests and meadows blazing with wildflowers. Uttarakhand is not just a destination;
+      it is an experience that changes you.
+    </p>
+    <button class="home-explore-btn" onclick="goTo(2)">Explore Destinations →</button>
+  </div>
+
+  <!-- Mountain SVG silhouette -->
+  <svg style="width:100%;display:block;margin-top:-2px;" viewBox="0 0 900 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <rect width="900" height="80" fill="#2c1a0e"/>
+    <polygon points="0,80 0,50 80,15 160,45 240,10 320,40 400,5 480,35 560,18 640,42 720,8 800,38 900,20 900,80" fill="#1c1409"/>
+  </svg>
+
+  <!-- Quick Stats Strip -->
+  <div class="home-stats">
+    <div class="home-stat">
+      <div class="stat-num">13</div>
+      <div class="stat-label">Districts</div>
+    </div>
+    <div class="home-stat">
+      <div class="stat-num">7,817m</div>
+      <div class="stat-label">Nanda Devi Peak</div>
+    </div>
+    <div class="home-stat">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Char Dhams</div>
+    </div>
+    <div class="home-stat">
+      <div class="stat-num">71%</div>
+      <div class="stat-label">Forest Cover</div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="home-about">
+    <div class="home-about-inner">
+      <div>
+        <h2>Welcome to<br><em>Dev Bhoomi</em></h2>
+        <p>
+          Uttarakhand, literally meaning "Northern Land," was carved out as India's 27th state on
+          November 9, 2000. Nestled in the western Himalayas, it borders Tibet (China) to the north and
+          Nepal to the east, and is home to the headwaters of the two holiest rivers in Hinduism —
+          the Ganges and the Yamuna.
+        </p>
+        <p>
+          The state is divided into two cultural regions: <strong>Garhwal</strong> in the west —
+          home to the Char Dhams and the Garhwali people — and <strong>Kumaon</strong> in the east,
+          known for its serene lakes, wildlife reserves, and the warm-hearted Kumaoni culture.
+          Together they form one of India's most extraordinary travel destinations.
+        </p>
+        <ul class="home-about-facts">
+          <li><span class="fact-icon">◆</span> State capital: Dehradun — a vibrant hill city in the Doon Valley</li>
+          <li><span class="fact-icon">◆</span> State flower: Brahmakamal — a rare high-altitude bloom sacred to Shiva</li>
+          <li><span class="fact-icon">◆</span> State bird: Himalayan Monal — a dazzlingly colourful pheasant</li>
+          <li><span class="fact-icon">◆</span> State tree: Buransh (Rhododendron) — colours entire hillsides red in spring</li>
+          <li><span class="fact-icon">◆</span> Language: Hindi, Garhwali, Kumaoni &amp; Sanskrit in rituals</li>
+          <li><span class="fact-icon">◆</span> Area: 53,483 sq km — from Terai plains to 7,800m+ peaks</li>
+        </ul>
+      </div>
+      <div class="home-svg-wrap">
+        <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+          <!-- Sky -->
+          <rect width="400" height="480" fill="#c8dde8"/>
+          <!-- Far mountains snow -->
+          <polygon points="0,240 60,150 120,190 180,120 240,170 300,100 360,160 400,130 400,240" fill="#d8e8f0"/>
+          <!-- Snow caps -->
+          <polygon points="150,190 180,120 210,160 230,130 260,155 300,100 330,135 360,110 380,140 400,130 400,160 350,170 300,145 260,185 230,155 210,175 180,145 150,190" fill="white" opacity="0.92"/>
+          <!-- Mid hills -->
+          <polygon points="0,300 0,240 80,190 160,230 240,180 320,220 400,180 400,300" fill="#4a7c3f"/>
+          <!-- Forest layer -->
+          <polygon points="0,340 0,290 50,260 100,285 160,255 220,280 280,250 340,278 400,255 400,340" fill="#2c5530"/>
+          <!-- Valley/river -->
+          <path d="M0,350 Q100,335 200,345 Q300,355 400,340 L400,370 Q300,380 200,370 Q100,360 0,375Z" fill="#7ab8d4" opacity="0.7"/>
+          <!-- Foreground green -->
+          <rect y="370" width="400" height="110" fill="#3d6b3a"/>
+          <!-- Temple suggestion -->
+          <rect x="160" y="270" width="80" height="55" fill="#f0d870"/>
+          <rect x="175" y="248" width="50" height="25" fill="#e8c850"/>
+          <polygon points="155,248 200,218 245,248" fill="#c8a030"/>
+          <rect x="192" y="190" width="16" height="30" fill="#d4b040"/>
+          <polygon points="190,190 200,174 210,190" fill="#b89030"/>
+          <!-- Rhododendron blooms -->
+          <circle cx="50" cy="290" r="12" fill="#e05060" opacity="0.8"/>
+          <circle cx="70" cy="285" r="9" fill="#e05060" opacity="0.7"/>
+          <circle cx="340" cy="285" r="11" fill="#e05060" opacity="0.8"/>
+          <circle cx="360" cy="280" r="8" fill="#e05060" opacity="0.7"/>
+          <!-- Sun/moon top right -->
+          <circle cx="360" cy="55" r="30" fill="#f0c040" opacity="0.8"/>
+          <circle cx="360" cy="55" r="23" fill="#f5d060"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Destinations Grid -->
+  <div class="home-dest-section">
+    <h2>Explore 16 Destinations</h2>
+    <p class="dest-sub">Click any card to jump straight to that destination</p>
+    <div class="dest-grid">
+
+      <!-- Card 1 -->
+      <div class="dest-card" onclick="goTo(2)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#b8d4e8"/>
+          <polygon points="0,110 0,60 40,30 80,55 120,20 160,50 200,25 200,110" fill="#2c5530"/>
+          <ellipse cx="100" cy="85" rx="95" ry="10" fill="#7ab8d4" opacity="0.7"/>
+          <circle cx="170" cy="25" r="12" fill="#f0c040" opacity="0.8"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Gateway City</div>
+          <div class="dest-card-name">Rishikesh</div>
+          <div class="dest-card-pg">Page 2</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="dest-card" onclick="goTo(3)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#c9dfe8"/>
+          <polygon points="0,110 0,65 50,40 100,60 150,30 200,50 200,110" fill="#2c5530"/>
+          <rect x="20" y="55" width="30" height="20" fill="#d4a96a" rx="2"/>
+          <polygon points="17,55 35,42 53,55" fill="#8B6914"/>
+          <ellipse cx="40" cy="20" rx="35" ry="12" fill="white" opacity="0.7"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Hill Station</div>
+          <div class="dest-card-name">Mussoorie</div>
+          <div class="dest-card-pg">Page 3</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="dest-card" onclick="goTo(4)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#a8c8d8"/>
+          <polygon points="0,110 0,60 50,35 100,55 150,25 200,45 200,110" fill="#2c5530"/>
+          <ellipse cx="100" cy="75" rx="70" ry="22" fill="#5a9cbf" opacity="0.85"/>
+          <ellipse cx="80" cy="78" rx="15" ry="5" fill="#8B6914"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Lake Town</div>
+          <div class="dest-card-name">Nainital</div>
+          <div class="dest-card-pg">Page 4</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="dest-card" onclick="goTo(5)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#d0d8e0"/>
+          <polygon points="0,110 0,60 50,35 100,55 150,25 200,45 200,110" fill="#c8d4dc"/>
+          <polygon points="70,55 100,25 130,55" fill="white"/>
+          <rect x="85" y="60" width="30" height="25" fill="#e8d8b0"/>
+          <polygon points="82,60 100,45 118,60" fill="#c8b880"/>
+          <ellipse cx="50" cy="95" rx="50" ry="12" fill="white" opacity="0.7"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Sacred Shrine</div>
+          <div class="dest-card-name">Kedarnath</div>
+          <div class="dest-card-pg">Page 5</div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="dest-card" onclick="goTo(6)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#c8e0d0"/>
+          <rect y="60" width="200" height="50" fill="#4a9050"/>
+          <path d="M0,75 Q50,55 100,70 Q150,85 200,65 L200,110 L0,110Z" fill="#5aac60"/>
+          <circle cx="30" cy="68" r="4" fill="#e05090"/>
+          <circle cx="70" cy="74" r="3" fill="#f0b030"/>
+          <circle cx="110" cy="65" r="4" fill="#9050d0"/>
+          <circle cx="150" cy="72" r="3" fill="#e04030"/>
+          <circle cx="180" cy="67" r="4" fill="#f0c040"/>
+          <polygon points="0,60 40,35 80,50 120,20 160,40 200,25 200,60" fill="#d8e4ec"/>
+          <polygon points="100,40 120,25 140,35" fill="white"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">UNESCO Heritage</div>
+          <div class="dest-card-name">Valley of Flowers</div>
+          <div class="dest-card-pg">Page 6</div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="dest-card" onclick="goTo(7)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#d8e8f0"/>
+          <polygon points="0,110 0,60 50,35 100,55 150,20 200,45 200,110" fill="#c0d0dc"/>
+          <polygon points="120,55 150,20 180,45 160,55" fill="white" opacity="0.9"/>
+          <rect x="75" y="55" width="50" height="30" fill="#f0d870"/>
+          <polygon points="70,55 100,35 130,55" fill="#c8a030"/>
+          <path d="M0,85 Q100,78 200,82 L200,95 Q100,100 0,96Z" fill="#7ab8d4" opacity="0.7"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Char Dham</div>
+          <div class="dest-card-name">Badrinath</div>
+          <div class="dest-card-pg">Page 7</div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="dest-card" onclick="goTo(8)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#e8f0f8"/>
+          <polygon points="0,110 0,60 50,35 100,55 150,20 200,45 200,110" fill="#dce8f0"/>
+          <path d="M0,110 Q100,85 200,95 L200,110Z" fill="white" opacity="0.9"/>
+          <path d="M0,100 Q100,88 200,95 L200,110 L0,110Z" fill="white"/>
+          <line x1="20" y1="50" x2="180" y2="38" stroke="#555" stroke-width="1.5"/>
+          <rect x="60" y="42" width="14" height="10" fill="#e04030" rx="2"/>
+          <rect x="120" y="38" width="14" height="10" fill="#e04030" rx="2"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Ski Destination</div>
+          <div class="dest-card-name">Auli</div>
+          <div class="dest-card-pg">Page 8</div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="dest-card" onclick="goTo(9)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#c8d8a0"/>
+          <rect y="50" width="200" height="60" fill="#3a6030"/>
+          <polygon points="0,110 0,60 30,40 60,55 90,30 120,50 150,25 180,45 200,30 200,110" fill="#2c5020"/>
+          <path d="M0,75 Q100,68 200,72" stroke="#7ab8d4" stroke-width="10" fill="none" opacity="0.8"/>
+          <ellipse cx="110" cy="83" rx="14" ry="7" fill="#d4802a"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Wildlife</div>
+          <div class="dest-card-name">Jim Corbett</div>
+          <div class="dest-card-pg">Page 9</div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="dest-card" onclick="goTo(10)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#c8e0c0"/>
+          <path d="M0,110 Q50,85 100,95 Q150,105 200,88 L200,110Z" fill="#5aac60"/>
+          <circle cx="25" cy="78" r="12" fill="#2c5530"/>
+          <circle cx="175" cy="75" r="11" fill="#2c5530"/>
+          <circle cx="22" cy="67" r="5" fill="#e05060" opacity="0.8"/>
+          <circle cx="178" cy="65" r="5" fill="#e05060" opacity="0.8"/>
+          <rect x="88" y="58" width="24" height="20" fill="#e8d880"/>
+          <polygon points="85,58 100,46 115,58" fill="#c8b860"/>
+          <polygon points="0,65 40,35 80,52 120,22 160,40 200,25 200,65" fill="#dce8ec"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Trekking</div>
+          <div class="dest-card-name">Chopta & Tungnath</div>
+          <div class="dest-card-pg">Page 10</div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="dest-card" onclick="goTo(11)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#e8d8b0"/>
+          <rect y="65" width="200" height="45" fill="#5a9cbf" opacity="0.7"/>
+          <rect x="0" y="60" width="200" height="10" fill="#c8a860"/>
+          <rect x="80" y="38" width="25" height="28" fill="#e8d060"/>
+          <polygon points="77,38 92,25 107,38" fill="#c8a030"/>
+          <circle cx="50" cy="78" r="3" fill="#f0a030" opacity="0.9"/>
+          <circle cx="100" cy="75" r="3" fill="#f0a030" opacity="0.9"/>
+          <circle cx="150" cy="78" r="3" fill="#f0a030" opacity="0.9"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Holy City</div>
+          <div class="dest-card-name">Haridwar</div>
+          <div class="dest-card-pg">Page 11</div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="dest-card" onclick="goTo(12)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#d8e8d0"/>
+          <polygon points="0,110 0,65 40,45 80,60 120,35 165,55 200,38 200,110" fill="#2c5530"/>
+          <polygon points="0,90 25,65 55,75 95,50 135,68 170,48 200,58 200,90" fill="#3d6b3a"/>
+          <rect x="80" y="55" width="50" height="25" fill="#e8d8b0"/>
+          <rect x="90" y="45" width="30" height="12" fill="#d4c8a0"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Offbeat Escape</div>
+          <div class="dest-card-name">Lansdowne</div>
+          <div class="dest-card-pg">Page 12</div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="dest-card" onclick="goTo(13)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#f5e8d0"/>
+          <rect x="20" y="65" width="160" height="8" fill="#8B6914"/>
+          <ellipse cx="60" cy="63" rx="25" ry="8" fill="#e8d060"/>
+          <ellipse cx="100" cy="63" rx="25" ry="8" fill="#d88050"/>
+          <ellipse cx="140" cy="63" rx="25" ry="8" fill="#d4bc70"/>
+          <path d="M0,10 Q25,2 50,10 Q75,18 100,10 Q125,2 150,10 Q175,18 200,10" stroke="#c8973a" stroke-width="1.5" fill="none"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Food & Culture</div>
+          <div class="dest-card-name">Uttarakhandi Cuisine</div>
+          <div class="dest-card-pg">Page 13</div>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="dest-card" onclick="goTo(14)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#d0e0ec"/>
+          <polygon points="0,110 0,60 50,35 100,55 150,20 200,45 200,110" fill="#c8d8e8"/>
+          <polygon points="60,40 90,15 120,35 100,42 75,38" fill="white" opacity="0.9"/>
+          <path d="M70,38 Q85,55 100,70 Q115,85 130,100" stroke="#7ab8d4" stroke-width="8" fill="none" opacity="0.8"/>
+          <rect x="30" y="58" width="30" height="22" fill="#f0e060"/>
+          <polygon points="27,58 45,44 63,58" fill="#d4c040"/>
+          <rect x="135" y="60" width="30" height="22" fill="#f0e060"/>
+          <polygon points="132,60 150,46 168,60" fill="#d4c040"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Char Dham</div>
+          <div class="dest-card-name">Gangotri & Yamunotri</div>
+          <div class="dest-card-pg">Page 14</div>
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="dest-card" onclick="goTo(15)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#f5ead0"/>
+          <rect x="0" y="0" width="200" height="15" fill="#c8973a" opacity="0.2"/>
+          <rect x="0" y="95" width="200" height="15" fill="#c8973a" opacity="0.2"/>
+          <circle cx="50" cy="55" r="14" fill="#d4801a"/>
+          <rect x="43" y="68" width="14" height="28" fill="#e85030"/>
+          <ellipse cx="110" cy="62" rx="28" ry="10" fill="#a0782a" rx="3"/>
+          <rect x="85" y="52" width="50" height="20" fill="#c8973a" opacity="0.7" rx="3"/>
+          <rect x="155" y="30" width="35" height="50" fill="#f5e8c8" stroke="#c8973a" stroke-width="1"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Heritage</div>
+          <div class="dest-card-name">Culture & Festivals</div>
+          <div class="dest-card-pg">Page 15</div>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="dest-card" onclick="goTo(16)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#d8e8f0"/>
+          <polygon points="0,110 0,65 30,50 65,60 100,35 135,55 170,25 200,45 200,110" fill="#c8d8e4"/>
+          <polygon points="85,55 100,35 115,45 130,28 145,42 160,25 175,38 175,55" fill="white" opacity="0.85"/>
+          <polygon points="108,35 120,20 132,30" fill="white"/>
+          <rect x="28" y="72" width="14" height="10" fill="#d4c090"/>
+          <polygon points="25,72 35,64 45,72" fill="#a08040"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Himalayan Village</div>
+          <div class="dest-card-name">Munsiyari</div>
+          <div class="dest-card-pg">Page 16</div>
+        </div>
+      </div>
+
+      <!-- Card 16 -->
+      <div class="dest-card" onclick="goTo(17)">
+        <svg class="dest-card-thumb" viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="110" fill="#ede0c4"/>
+          <path d="M0,65 Q50,60 100,63 Q150,66 200,60" stroke="#c8a860" stroke-width="5" fill="none" opacity="0.7"/>
+          <path d="M100,110 Q102,85 104,65 Q106,45 108,25" stroke="#c8a860" stroke-width="5" fill="none" opacity="0.7"/>
+          <circle cx="45" cy="62" r="6" fill="#e04030" opacity="0.8"/>
+          <circle cx="105" cy="55" r="6" fill="#e04030" opacity="0.8"/>
+          <circle cx="160" cy="60" r="6" fill="#e04030" opacity="0.8"/>
+          <circle cx="178" cy="28" r="18" fill="#e8d8b0" stroke="#c8973a" stroke-width="1.5"/>
+          <polygon points="178,14 180,24 178,22 176,24" fill="#c8973a"/>
+        </svg>
+        <div class="dest-card-body">
+          <div class="dest-card-cat">Practical Guide</div>
+          <div class="dest-card-name">Travel Tips</div>
+          <div class="dest-card-pg">Page 17</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Best Seasons Band -->
+  <div class="home-seasons">
+    <div class="home-seasons-inner">
+      <h2>When to Visit Uttarakhand</h2>
+      <div class="seasons-grid">
+        <div class="season-card">
+          <h4>Spring (Mar – May)</h4>
+          <p>Rhododendrons blaze red across hillsides. Perfect for Char Dham yatra opening and valley treks.</p>
+        </div>
+        <div class="season-card">
+          <h4>Summer (Jun – Jul)</h4>
+          <p>Valley of Flowers blooms in riot of colour. Hill stations offer cool escape from plains heat.</p>
+        </div>
+        <div class="season-card">
+          <h4>Monsoon (Aug – Sep)</h4>
+          <p>Lush green everywhere but landslide risk on mountain roads. Wildlife thrives; Corbett excellent.</p>
+        </div>
+        <div class="season-card">
+          <h4>Autumn (Oct – Nov)</h4>
+          <p>Crystal clear skies, best Himalayan views. Ideal for trekking and Char Dham closing ceremonies.</p>
+        </div>
+        <div class="season-card">
+          <h4>Winter (Dec – Feb)</h4>
+          <p>Auli ski season peaks. Higher temples snow-bound. Haridwar and Rishikesh peaceful and beautiful.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- END PAGE 1 HOME -->
+
+
+<!-- ══════════════════════════════════════════════════════
+     PAGE 2 — RISHIKESH
+══════════════════════════════════════════════════════ -->
+<section class="page" data-page="2">
+  <div class="page-strip">
+    <div class="page-num">02</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Gateway City</div>
+      <h2>Rishikesh — The Yoga Capital of the World</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#b8d4e8"/>
+      <rect y="160" width="900" height="140" fill="#4a7c3f"/>
+      <polygon points="0,300 0,180 120,80 240,160 360,60 480,140 600,50 720,130 900,70 900,300" fill="#2c5530"/>
+      <rect y="220" width="900" height="80" fill="#3d6b3a"/>
+      <ellipse cx="450" cy="240" rx="420" ry="18" fill="#7ab8d4" opacity="0.7"/>
+      <rect x="320" y="200" width="8" height="50" fill="#8B6914"/>
+      <rect x="572" y="200" width="8" height="50" fill="#8B6914"/>
+      <path d="M 324 210 Q 450 190 576 210" stroke="#8B6914" stroke-width="3" fill="none"/>
+      <path d="M 324 220 Q 450 200 576 220" stroke="#5a3e2b" stroke-width="2" fill="none"/>
+      <circle cx="760" cy="60" r="28" fill="#f0c040" opacity="0.85"/>
+      <circle cx="760" cy="60" r="22" fill="#f5d060"/>
+      <polygon points="0,160 60,90 120,130 200,70 280,120 380,55 460,100 540,40 620,95 700,50 780,100 900,60 900,160" fill="#d4c5b0" opacity="0.6"/>
+      <polygon points="380,55 400,85 420,70 460,100 490,55 510,80 540,40 560,65 580,45 590,70 620,50 640,60" fill="white" opacity="0.8"/>
+    </svg>
+    <p class="intro-text">"Rishikesh is not just a destination — it is a state of mind where the Ganges whispers secrets of the universe to those willing to listen."</p>
+    <p class="body-text">Nestled in the foothills of the Himalayas where the sacred Ganges descends from the mountains onto the plains, Rishikesh is one of India's most spiritually vibrant cities. Known as the "Yoga Capital of the World," it draws seekers, adventurers, and pilgrims from every corner of the globe. The famous Beatles visited in 1968 to study Transcendental Meditation here, cementing its global reputation.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">372 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Sep – Jun</div></div>
+      <div class="info-card"><div class="ic-label">Famous For</div><div class="ic-value">Yoga & Rafting</div></div>
+      <div class="info-card"><div class="ic-label">Distance from Delhi</div><div class="ic-value">238 km</div></div>
+    </div>
+    <h3 class="section-heading">Top Highlights</h3>
+    <ul class="highlights">
+      <li>Laxman Jhula & Ram Jhula — iconic suspension bridges over the Ganges</li>
+      <li>White water rafting on Grade III–V rapids of the Ganges</li>
+      <li>Triveni Ghat evening aarti — a mesmerizing ritual of fire and devotion</li>
+      <li>Beatles Ashram (Chaurasi Kutia) — a hauntingly beautiful abandoned retreat</li>
+      <li>Bungee jumping at Mohan Chatti — India's highest fixed platform jump at 83m</li>
+      <li>Yoga and meditation retreats at Parmarth Niketan and Sivananda Ashram</li>
+    </ul>
+    <div class="two-col">
+      <div class="col-box">
+        <h4>Where to Eat</h4>
+        <ul><li>Chotiwala Restaurant</li><li>Madras Café (South Indian)</li><li>Ganga Beach Café</li><li>Puri Wale Baba stalls</li></ul>
+      </div>
+      <div class="col-box">
+        <h4>Adventure Activities</h4>
+        <ul><li>River Rafting (Shivpuri)</li><li>Camping by the Ganga</li><li>Zip-lining & Flying Fox</li><li>Trekking to Kunjapuri</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 3 — MUSSOORIE -->
+<section class="page" data-page="3">
+  <div class="page-strip">
+    <div class="page-num">03</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Hill Station</div>
+      <h2>Mussoorie — The Queen of the Hills</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#c9dfe8"/>
+      <rect width="900" height="160" fill="#d4e4ec"/>
+      <polygon points="0,300 0,200 150,120 300,170 450,100 600,160 750,90 900,140 900,300" fill="#2c5530"/>
+      <polygon points="0,200 100,130 200,165 350,105 500,145 650,85 800,125 900,100 900,200" fill="#8ba898" opacity="0.5"/>
+      <rect x="100" y="155" width="60" height="40" fill="#d4a96a" rx="2"/>
+      <polygon points="95,155 130,130 165,155" fill="#8B6914"/>
+      <rect x="200" y="150" width="80" height="45" fill="#c49060" rx="2"/>
+      <polygon points="195,150 240,120 285,150" fill="#7a4f20"/>
+      <ellipse cx="200" cy="50" rx="80" ry="25" fill="white" opacity="0.7"/>
+      <ellipse cx="650" cy="40" rx="90" ry="22" fill="white" opacity="0.65"/>
+    </svg>
+    <p class="intro-text">"Like a string of pearls stretched across the lower Himalayan ridge, Mussoorie glitters against the mountains — charming, colonial, and captivating."</p>
+    <p class="body-text">Perched at 2,000 metres in the Garhwal Himalayan range, Mussoorie has enchanted visitors since the British first built their summer retreats here in the early 1800s. Known as the "Queen of the Hills," it offers sweeping panoramic views of the Doon Valley below and the eternal snows above. The Mall Road still retains its colonial elegance, lined with grand old hotels, cheerful shops, and roadside cafés.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">2,005 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Mar – Jun, Oct – Dec</div></div>
+      <div class="info-card"><div class="ic-label">Distance from Dehradun</div><div class="ic-value">35 km</div></div>
+      <div class="info-card"><div class="ic-label">Famous For</div><div class="ic-value">Views & Heritage</div></div>
+    </div>
+    <h3 class="section-heading">Must-See Attractions</h3>
+    <ul class="highlights">
+      <li>Kempty Falls — a spectacular 40-foot cascade surrounded by hills</li>
+      <li>Mall Road — iconic promenade with shops, food stalls and viewpoints</li>
+      <li>Lal Tibba — highest point with telescopic Himalayan views</li>
+      <li>Cloud's End — forest bungalow at the western tip of the ridge</li>
+      <li>Gun Hill — second highest peak, reachable via ropeway</li>
+      <li>Camel's Back Road — a peaceful 3km heritage walk with valley views</li>
+    </ul>
+    <div class="quote-box">
+      <p>"The hills are alive with the sound of bells, the smell of pine, and the sight of peaks that humble even the most jaded traveller."</p>
+      <cite>— Ruskin Bond, writer & long-time resident of Landour, Mussoorie</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 4 — NAINITAL -->
+<section class="page" data-page="4">
+  <div class="page-strip">
+    <div class="page-num">04</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Lake Town</div>
+      <h2>Nainital — The City of Lakes</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#a8c8d8"/>
+      <rect width="900" height="160" fill="#c8dde8"/>
+      <polygon points="0,300 0,180 120,110 250,160 380,90 500,150 650,80 800,130 900,100 900,300" fill="#2c5530"/>
+      <polygon points="0,200 0,160 80,100 200,150 350,80 500,130 650,70 800,110 900,85 900,200" fill="#4a7c3f"/>
+      <ellipse cx="450" cy="210" rx="280" ry="70" fill="#5a9cbf" opacity="0.85"/>
+      <ellipse cx="450" cy="205" rx="260" ry="55" fill="#7ab8d4" opacity="0.6"/>
+      <ellipse cx="380" cy="215" rx="30" ry="8" fill="#8B6914"/>
+      <rect x="392" y="195" width="2" height="22" fill="#5a3e2b"/>
+      <polygon points="394,196 410,205 394,208" fill="#d4401f" opacity="0.8"/>
+      <rect x="700" y="120" width="50" height="40" fill="#e8c860"/>
+      <polygon points="695,120 725,95 755,120" fill="#c8973a"/>
+    </svg>
+    <p class="intro-text">"Nainital cradles a sapphire lake in a bowl of emerald hills — a gift of nature so perfect it seems designed by a divine artist."</p>
+    <p class="body-text">Sitting in a natural crater at 2,084 metres, Nainital is centred around the Naini Lake — a gorgeous freshwater lake shaped like an eye. The town cascades down the hillsides in tiers of colourful buildings, hotels and bazaars. This beloved Kumaon hill station was once the summer capital of the United Provinces during British rule.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">2,084 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Mar – Jun, Sep – Nov</div></div>
+      <div class="info-card"><div class="ic-label">Lake Size</div><div class="ic-value">1.5 × 0.5 km</div></div>
+      <div class="info-card"><div class="ic-label">Famous For</div><div class="ic-value">Naini Lake & boating</div></div>
+    </div>
+    <h3 class="section-heading">Top Experiences</h3>
+    <ul class="highlights">
+      <li>Boating on Naini Lake at dawn — a surreal, misty experience</li>
+      <li>Naina Devi Temple — Shakti Peeth built on the northern shore</li>
+      <li>Snow View Point — panoramic views of Nanda Devi, Trishul & Nandakot</li>
+      <li>Eco Cave Gardens — natural interconnected caves and rock formations</li>
+      <li>Tiffin Top (Dorothy's Seat) — scenic horseback riding destination</li>
+      <li>Bhimtal, Sattal & Khurpatal — serene lakes in the vicinity</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 5 — KEDARNATH -->
+<section class="page" data-page="5">
+  <div class="page-strip">
+    <div class="page-num">05</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Sacred Shrine</div>
+      <h2>Kedarnath — Abode of Lord Shiva</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#d0d8e0"/>
+      <polygon points="0,300 0,200 100,130 200,170 300,100 400,150 500,80 600,140 700,60 800,120 900,90 900,300" fill="#c8d4dc"/>
+      <polygon points="200,300 200,200 300,120 400,170 500,100 600,160 700,70 800,130 900,95 900,300" fill="#b0bcc8" opacity="0.7"/>
+      <polygon points="300,100 330,80 360,65 390,80 420,60 450,75 500,80 520,100" fill="white"/>
+      <polygon points="600,140 640,100 680,70 720,60 760,80 800,120" fill="white"/>
+      <rect x="390" y="175" width="120" height="70" fill="#e8d8b0"/>
+      <polygon points="385,175 450,135 515,175" fill="#c8b880"/>
+      <rect x="430" y="100" width="40" height="40" fill="#d4c090"/>
+      <polygon points="428,100 450,78 472,100" fill="#b8a860"/>
+      <circle cx="450" cy="76" r="5" fill="#c8973a"/>
+      <ellipse cx="300" cy="270" rx="200" ry="30" fill="white" opacity="0.7"/>
+      <ellipse cx="650" cy="260" rx="180" ry="25" fill="white" opacity="0.6"/>
+    </svg>
+    <p class="intro-text">"To reach Kedarnath is to leave the world behind. At 3,583 metres, the only thing between you and the eternal is the ancient stone of Shiva's shrine."</p>
+    <p class="body-text">Kedarnath is one of the twelve Jyotirlingas of Lord Shiva and undeniably the most dramatically situated. The ancient stone temple, believed to be over 1,200 years old and credited to Adi Shankaracharya, sits beneath the magnificent Kedarnath peak. The 22 km trek from Gaurikund through rhododendron forests and alpine meadows is a pilgrimage of body and soul.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">3,583 m</div></div>
+      <div class="info-card"><div class="ic-label">Temple Open</div><div class="ic-value">May – Nov</div></div>
+      <div class="info-card"><div class="ic-label">Trek from Gaurikund</div><div class="ic-value">22 km one-way</div></div>
+      <div class="info-card"><div class="ic-label">Part of</div><div class="ic-value">Char Dham Yatra</div></div>
+    </div>
+    <h3 class="section-heading">Pilgrimage Essentials</h3>
+    <ul class="highlights">
+      <li>Register online for Char Dham Yatra before visiting — mandatory since 2022</li>
+      <li>Helicopter services available from Phata, Guptkashi and Sirsi helipads</li>
+      <li>Gaurikund hot springs — sacred kund to bathe in before the trek</li>
+      <li>Vasuki Tal — a stunning alpine lake 6 km beyond the temple</li>
+      <li>Bhairav Temple — always visit after Kedarnath darshan for the full blessing</li>
+    </ul>
+    <div class="quote-box">
+      <p>"Kedarnath witnessed the 2013 cloudburst that devastated the valley, yet the ancient temple stood intact. Many believe Shiva himself protected his abode."</p>
+      <cite>— Local tradition and temple trust records</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 6 — VALLEY OF FLOWERS -->
+<section class="page" data-page="6">
+  <div class="page-strip">
+    <div class="page-num">06</div>
+    <div class="page-strip-info">
+      <div class="category">✦ UNESCO World Heritage</div>
+      <h2>Valley of Flowers — Himalayan Eden</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#c8e0d0"/>
+      <rect y="160" width="900" height="140" fill="#4a9050"/>
+      <path d="M0,200 Q150,160 300,190 Q450,220 600,175 Q750,140 900,170 L900,300 L0,300Z" fill="#5aac60"/>
+      <circle cx="100" cy="195" r="6" fill="#e05090"/><circle cx="180" cy="210" r="5" fill="#f0b030"/>
+      <circle cx="260" cy="185" r="7" fill="#9050d0"/><circle cx="340" cy="205" r="5" fill="#e04030"/>
+      <circle cx="420" cy="190" r="6" fill="#f0c040"/><circle cx="500" cy="210" r="5" fill="#5090e0"/>
+      <circle cx="580" cy="185" r="7" fill="#e05090"/><circle cx="660" cy="200" r="5" fill="#9050d0"/>
+      <circle cx="740" cy="188" r="6" fill="#f0b030"/><circle cx="820" cy="210" r="5" fill="#e04030"/>
+      <polygon points="0,160 80,100 160,130 260,70 360,110 460,55 560,100 660,60 760,95 860,50 900,70 900,160" fill="#d8e4ec"/>
+      <polygon points="360,110 410,75 460,55 510,80 560,100" fill="white" opacity="0.9"/>
+    </svg>
+    <p class="intro-text">"In the monsoon months, the Valley of Flowers erupts in a riot of colour so vivid, so overwhelming, that it seems the mountains themselves have decided to celebrate."</p>
+    <p class="body-text">Designated a UNESCO World Heritage Site in 2005, the Valley of Flowers National Park is a spectacular high-altitude Himalayan meadow spread across 87 square kilometres. Located in the Chamoli district at heights ranging from 3,352m to 6,675m, the valley bursts into an astonishing carpet of over 500 species of wildflowers during July to September. It was discovered by British mountaineer Frank Smythe in 1931.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">3,352 – 6,675 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">July – September</div></div>
+      <div class="info-card"><div class="ic-label">Area</div><div class="ic-value">87 sq km</div></div>
+      <div class="info-card"><div class="ic-label">Base Camp</div><div class="ic-value">Ghangaria</div></div>
+    </div>
+    <h3 class="section-heading">Flora & Wildlife</h3>
+    <ul class="highlights">
+      <li>Over 500 flowering plant species — Brahmakamal, Blue Poppy, Cobra Lily</li>
+      <li>Rare wildlife: Snow Leopard, Asiatic Black Bear, Blue Sheep (Bharal)</li>
+      <li>Birds: Himalayan Monal (state bird), Koklass Pheasant, Snow Partridge</li>
+      <li>Hemkund Sahib — Sikh holy lake at 4,329m just above the valley</li>
+      <li>Camping at Ghangaria (3,048m) — base camp for both Valley and Hemkund</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 7 — BADRINATH -->
+<section class="page" data-page="7">
+  <div class="page-strip">
+    <div class="page-num">07</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Char Dham</div>
+      <h2>Badrinath — Seat of Lord Vishnu</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#d8e8f0"/>
+      <polygon points="0,300 0,180 100,110 200,150 350,70 500,130 650,60 800,110 900,85 900,300" fill="#c0d0dc"/>
+      <polygon points="270,180 350,70 430,80 480,60 530,90 580,70 650,110 600,180" fill="white" opacity="0.9"/>
+      <path d="M0,250 Q200,235 400,248 Q600,260 900,240 L900,270 Q600,285 400,272 Q200,260 0,275Z" fill="#7ab8d4" opacity="0.7"/>
+      <rect x="370" y="170" width="160" height="75" fill="#f0d870"/>
+      <rect x="390" y="140" width="120" height="35" fill="#e8c850"/>
+      <polygon points="385,140 450,100 515,140" fill="#c8a030"/>
+      <rect x="432" y="65" width="36" height="38" fill="#d4b040"/>
+      <polygon points="430,65 450,42 470,65" fill="#b89030"/>
+      <rect x="375" y="175" width="18" height="65" fill="#e05020" opacity="0.8"/>
+      <rect x="507" y="175" width="18" height="65" fill="#e05020" opacity="0.8"/>
+    </svg>
+    <p class="intro-text">"Badrinath — where the Alaknanda roars, where the Neelkanth peak towers in white, and where Lord Vishnu is believed to meditate in eternal solitude."</p>
+    <p class="body-text">Situated at 3,133 metres in the Chamoli district, Badrinath is one of the most revered Hindu pilgrimage sites. The colourful temple facade, the sacred Tapt Kund hot spring, the Brahmakapal ghat for ancestor rituals, and the mighty Neelkanth peak (6,596m) as a backdrop make this a visually and spiritually overwhelming destination.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">3,133 m</div></div>
+      <div class="info-card"><div class="ic-label">Temple Open</div><div class="ic-value">May – Nov</div></div>
+      <div class="info-card"><div class="ic-label">Distance from Rishikesh</div><div class="ic-value">298 km</div></div>
+      <div class="info-card"><div class="ic-label">River</div><div class="ic-value">Alaknanda</div></div>
+    </div>
+    <h3 class="section-heading">Sacred Spots Nearby</h3>
+    <ul class="highlights">
+      <li>Tapt Kund — natural hot spring at 45°C used for ritual bathing</li>
+      <li>Mana Village — last inhabited village before the Tibet border</li>
+      <li>Vasudhara Falls — 122m waterfall said to be visible only to the pure of heart</li>
+      <li>Satopanth Lake — glacial lake at 4,402m sacred to the Hindu Trinity</li>
+      <li>Vyas Gufa — cave where sage Vyas dictated the Mahabharata</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 8 — AULI -->
+<section class="page" data-page="8">
+  <div class="page-strip">
+    <div class="page-num">08</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Ski Destination</div>
+      <h2>Auli — The Ski Slopes of the Himalayas</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#e8f0f8"/>
+      <polygon points="0,300 0,180 80,110 180,155 280,80 400,140 520,65 640,125 760,55 900,100 900,300" fill="#dce8f0"/>
+      <path d="M0,300 Q200,240 400,260 Q600,280 900,250 L900,300Z" fill="white" opacity="0.9"/>
+      <path d="M0,280 Q150,250 300,265 Q500,280 700,255 Q800,245 900,258 L900,300 L0,300Z" fill="white"/>
+      <line x1="100" y1="140" x2="800" y2="100" stroke="#555" stroke-width="2"/>
+      <rect x="280" y="120" width="30" height="22" fill="#e04030" rx="4"/>
+      <rect x="560" y="105" width="30" height="22" fill="#e04030" rx="4"/>
+      <polygon points="150,255 160,230 170,255" fill="#3d6b3a"/>
+      <polygon points="200,265 212,238 224,265" fill="#3d6b3a"/>
+      <polygon points="650,248 662,222 674,248" fill="#3d6b3a"/>
+      <polygon points="440,65 520,30 600,65 560,90 480,85" fill="white"/>
+    </svg>
+    <p class="intro-text">"Auli offers what few ski destinations in the world can — the backdrop of Nanda Devi, Mana Parbat and Kamet while you carve through pristine powder snow."</p>
+    <p class="body-text">Auli is India's premier ski resort, situated at 2,500–3,050 metres in Chamoli district with 16 km of pisted runs and unobstructed views of Nanda Devi (7,816m), India's second highest mountain. GMVN and private operators run ski courses for beginners through advanced skiers, with full equipment rental available.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">2,500 – 3,050 m</div></div>
+      <div class="info-card"><div class="ic-label">Ski Season</div><div class="ic-value">Jan – Mar</div></div>
+      <div class="info-card"><div class="ic-label">Gondola from Joshimath</div><div class="ic-value">4 km</div></div>
+      <div class="info-card"><div class="ic-label">Peak View</div><div class="ic-value">Nanda Devi, 7,816m</div></div>
+    </div>
+    <h3 class="section-heading">Activities & Treks</h3>
+    <ul class="highlights">
+      <li>Downhill skiing — beginner to advanced runs with certified instructors</li>
+      <li>Auli to Gorson Bugyal trek — meadow trek with exceptional Himalayan panorama</li>
+      <li>Kuari Pass Trek (3,640m) — colonial-era "Lord Curzon's Trail"</li>
+      <li>Artificial lake at 2,914m — one of the highest man-made lakes in Asia</li>
+      <li>Chattrakund Lake — pristine offbeat lake surrounded by oaks and rhododendrons</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 9 — JIM CORBETT -->
+<section class="page" data-page="9">
+  <div class="page-strip">
+    <div class="page-num">09</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Wildlife & Nature</div>
+      <h2>Jim Corbett National Park — Land of the Tiger</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#c8d8a0"/>
+      <rect y="150" width="900" height="150" fill="#3a6030"/>
+      <polygon points="0,300 0,180 60,130 100,170 140,120 200,165 260,110 320,155 380,105 440,150 500,100 560,145 620,95 680,140 740,90 800,135 860,85 900,110 900,300" fill="#2c5020"/>
+      <path d="M0,235 Q150,220 300,232 Q450,244 600,228 Q750,215 900,225" stroke="#7ab8d4" stroke-width="18" fill="none" opacity="0.8"/>
+      <ellipse cx="460" cy="245" rx="35" ry="15" fill="#d4802a"/>
+      <circle cx="488" cy="235" r="12" fill="#d4802a"/>
+      <line x1="440" y1="238" x2="450" y2="255" stroke="#5a3010" stroke-width="3"/>
+      <line x1="458" y1="233" x2="465" y2="252" stroke="#5a3010" stroke-width="3"/>
+      <ellipse cx="250" cy="248" rx="40" ry="25" fill="#7a7060"/>
+      <circle cx="278" cy="232" r="18" fill="#7a7060"/>
+      <rect x="242" y="240" width="8" height="35" fill="#7a7060"/>
+      <rect x="260" y="240" width="8" height="35" fill="#7a7060"/>
+    </svg>
+    <p class="intro-text">"In Corbett, every rustle of grass, every alarm call of a deer, every shadow in the sal forest is a reminder that you are a guest in a world that belongs to the tiger."</p>
+    <p class="body-text">Established in 1936 as India's first national park, Jim Corbett National Park spreads over 1,318 sq km of the Himalayan foothills in Nainital district. Named after the legendary hunter-turned-conservationist Jim Corbett, the park is one of India's finest tiger reserves with over 260 Bengal tigers. The Ramganga river flows through the park, creating rich riparian habitats.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Area</div><div class="ic-value">1,318 sq km</div></div>
+      <div class="info-card"><div class="ic-label">Tigers</div><div class="ic-value">260+ Bengal Tigers</div></div>
+      <div class="info-card"><div class="ic-label">Best Zone</div><div class="ic-value">Dhikala</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Nov – June</div></div>
+    </div>
+    <h3 class="section-heading">Wildlife & Safari</h3>
+    <ul class="highlights">
+      <li>Bengal Tiger, Asian Elephant, Leopard, Sloth Bear, Gharial Crocodile</li>
+      <li>Over 600 bird species — a paradise for birdwatchers</li>
+      <li>Jeep safari in Bijrani & Jhirna zones (open year-round)</li>
+      <li>Dhikala zone — overnight canter safari with forest rest houses</li>
+      <li>Corbett Museum at Kaladhungi — Jim Corbett's winter home</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 10 — CHOPTA & TUNGNATH -->
+<section class="page" data-page="10">
+  <div class="page-strip">
+    <div class="page-num">10</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Trekking Paradise</div>
+      <h2>Chopta & Tungnath — Mini Switzerland of Uttarakhand</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#c8e0c0"/>
+      <path d="M0,300 Q100,240 250,260 Q400,280 550,250 Q700,220 900,240 L900,300Z" fill="#5aac60"/>
+      <path d="M0,270 Q150,245 300,258 Q500,272 700,245 Q800,235 900,250 L900,300 L0,300Z" fill="#4a9050"/>
+      <circle cx="100" cy="220" r="25" fill="#2c5530"/>
+      <circle cx="180" cy="215" r="28" fill="#2c5530"/>
+      <circle cx="750" cy="218" r="26" fill="#2c5530"/>
+      <circle cx="90" cy="200" r="8" fill="#e05060" opacity="0.8"/>
+      <circle cx="175" cy="198" r="7" fill="#e05060" opacity="0.8"/>
+      <circle cx="760" cy="200" r="8" fill="#e05060" opacity="0.8"/>
+      <rect x="420" y="175" width="60" height="45" fill="#e8d880"/>
+      <polygon points="415,175 450,150 485,175" fill="#c8b860"/>
+      <polygon points="0,180 100,110 200,150 300,80 400,130 500,60 600,110 700,50 800,100 900,70 900,180" fill="#dce8ec"/>
+      <polygon points="400,130 450,90 500,60 550,85 600,110" fill="white"/>
+    </svg>
+    <p class="intro-text">"Chopta's meadows glow red in spring with a million rhododendron blooms. From Tungnath's ancient stones, the entire arc of the high Himalayas is spread before you like a living painting."</p>
+    <p class="body-text">Chopta at 2,680 metres is often called "Mini Switzerland" for its lush rolling meadows and unobstructed mountain views. The 3.5 km trek leads to Tungnath — at 3,680m, the highest Shiva temple in the world. A further 1.5 km hike reaches Chandrashila peak at 4,130m with a full 360° Himalayan panorama.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Chopta Elevation</div><div class="ic-value">2,680 m</div></div>
+      <div class="info-card"><div class="ic-label">Tungnath</div><div class="ic-value">3,680 m (World's highest Shiva temple)</div></div>
+      <div class="info-card"><div class="ic-label">Chandrashila</div><div class="ic-value">4,130 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Mar–Jun, Nov–Dec</div></div>
+    </div>
+    <h3 class="section-heading">Highlights</h3>
+    <ul class="highlights">
+      <li>Tungnath trek — 3.5 km gentle ascent through silver oak and rhododendron forest</li>
+      <li>Chandrashila — 360° sunrise view of 20+ Himalayan peaks</li>
+      <li>Deoria Tal — mirror lake with Chaukhamba reflection, 3 km trek from Sari village</li>
+      <li>Bugiyal camping — sleep under billions of stars at 3,000m</li>
+      <li>Rudraprayag — holy confluence of Alaknanda and Mandakini rivers (70 km)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 11 — HARIDWAR -->
+<section class="page" data-page="11">
+  <div class="page-strip">
+    <div class="page-num">11</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Holy City</div>
+      <h2>Haridwar — Gateway to the Gods</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#e8d8b0"/>
+      <rect y="200" width="900" height="100" fill="#5a9cbf" opacity="0.7"/>
+      <path d="M0,200 Q200,190 450,200 Q650,210 900,195 L900,220 Q650,230 450,220 Q200,210 0,220Z" fill="#7ab8d4" opacity="0.5"/>
+      <rect x="0" y="175" width="900" height="30" fill="#c8a860"/>
+      <rect x="50" y="155" width="40" height="25" fill="#d4b870"/>
+      <rect x="120" y="150" width="50" height="30" fill="#c8a060"/>
+      <rect x="700" y="150" width="50" height="30" fill="#c8a060"/>
+      <rect x="780" y="155" width="40" height="25" fill="#d4b870"/>
+      <rect x="380" y="120" width="50" height="60" fill="#e8d060"/>
+      <polygon points="375,120 405,95 435,120" fill="#c8a030"/>
+      <rect x="240" y="130" width="40" height="50" fill="#f0d870"/>
+      <polygon points="235,130 260,108 285,130" fill="#d4b040"/>
+      <circle cx="200" cy="215" r="4" fill="#f0a030" opacity="0.9"/>
+      <circle cx="350" cy="220" r="4" fill="#f0a030" opacity="0.9"/>
+      <circle cx="500" cy="212" r="4" fill="#f0a030" opacity="0.9"/>
+      <circle cx="650" cy="218" r="4" fill="#f0a030" opacity="0.9"/>
+    </svg>
+    <p class="intro-text">"At Har Ki Pauri, as the Ganga Aarti begins at dusk, thousands of oil lamps float on the sacred waters — and for a moment, the divine feels touchable."</p>
+    <p class="body-text">Haridwar, literally meaning "Gateway to God," is where the sacred Ganges emerges from the Shivalik Hills onto the plains. It is one of the seven holiest places in Hinduism and hosts the Kumbh Mela — the world's largest religious gathering — every 12 years. The evening Ganga Aarti at Har Ki Pauri ghat is an experience that transcends religion.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">314 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Sep – Apr</div></div>
+      <div class="info-card"><div class="ic-label">Kumbh Mela</div><div class="ic-value">Every 12 years</div></div>
+      <div class="info-card"><div class="ic-label">Distance from Delhi</div><div class="ic-value">214 km</div></div>
+    </div>
+    <h3 class="section-heading">Spiritual Experiences</h3>
+    <ul class="highlights">
+      <li>Ganga Aarti at Har Ki Pauri — evening ritual of bells and fire at 6 PM daily</li>
+      <li>Chandi Devi Temple — reachable by ropeway, Shakti Peeth with ancient origins</li>
+      <li>Mansa Devi Temple — hilltop temple with panoramic city views via cable car</li>
+      <li>Maya Devi Temple — one of the Shakti Peethas located in the city itself</li>
+      <li>Patanjali Yogpeeth — Baba Ramdev's massive yoga research campus</li>
+      <li>Ayurvedic markets on Moti Bazaar — herbal medicines, oils and ritual items</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 12 — LANSDOWNE -->
+<section class="page" data-page="12">
+  <div class="page-strip">
+    <div class="page-num">12</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Offbeat Escape</div>
+      <h2>Lansdowne — Uttarakhand's Untouched Hill Station</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#d8e8d0"/>
+      <polygon points="0,300 0,200 100,140 200,180 320,110 450,165 580,95 720,155 900,110 900,300" fill="#2c5530"/>
+      <polygon points="0,230 60,170 140,200 240,140 360,185 480,120 600,170 740,115 900,145 900,230" fill="#3d6b3a"/>
+      <polygon points="130,200 145,165 160,200" fill="#1a3a20"/>
+      <polygon points="155,200 172,162 189,200" fill="#2c5530"/>
+      <polygon points="550,170 565,135 580,170" fill="#1a3a20"/>
+      <rect x="350" y="155" width="200" height="80" fill="#e8d8b0"/>
+      <rect x="380" y="130" width="140" height="30" fill="#d4c8a0"/>
+      <rect x="650" y="140" width="70" height="60" fill="#f0e8d0"/>
+      <polygon points="648,140 685,110 722,140" fill="#d4c0a0"/>
+    </svg>
+    <p class="intro-text">"Lansdowne is Uttarakhand's best-kept secret — a colonial cantonment town where the British-era silence has barely been disturbed, and the oak forests still belong to the woodpeckers."</p>
+    <p class="body-text">Lansdowne is a small, unhurried cantonment hill station at 1,706m in Pauri Garhwal district, developed by the British in 1887 and named after then-Viceroy Lord Lansdowne. It remains the regimental headquarters of the Garhwal Rifles. Unlike crowded hill stations, Lansdowne has deliberately kept tourism minimal, preserving its colonial character — red-roofed buildings, well-kept gardens, and ancient oak forests.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">1,706 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Year-round</div></div>
+      <div class="info-card"><div class="ic-label">Distance from Delhi</div><div class="ic-value">260 km</div></div>
+      <div class="info-card"><div class="ic-label">Character</div><div class="ic-value">Colonial Cantonment</div></div>
+    </div>
+    <h3 class="section-heading">Things to Do</h3>
+    <ul class="highlights">
+      <li>Tip-in-Top viewpoint — sunrise views of snow-clad Himalayas on clear days</li>
+      <li>Garhwali Museum — remarkable collection of Garhwal Rifles history and arms</li>
+      <li>Bhulla Lake — small artificial lake perfect for paddleboating</li>
+      <li>Tarkeshwar Mahadev Temple — ancient Shiva shrine in cedar forest, 38 km away</li>
+      <li>Morning walks through oak and rhododendron forests — birding paradise</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 13 — UTTARAKHANDI CUISINE -->
+<section class="page" data-page="13">
+  <div class="page-strip">
+    <div class="page-num">13</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Food & Culture</div>
+      <h2>Uttarakhandi Cuisine — Mountain Flavours</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#f5e8d0"/>
+      <rect width="900" height="300" fill="#ede0c0" opacity="0.5"/>
+      <rect x="100" y="180" width="700" height="20" fill="#8B6914"/>
+      <rect x="150" y="195" width="20" height="80" fill="#7a5a10"/>
+      <rect x="730" y="195" width="20" height="80" fill="#7a5a10"/>
+      <ellipse cx="250" cy="178" rx="55" ry="15" fill="#c8a850"/>
+      <ellipse cx="250" cy="175" rx="50" ry="12" fill="#e8d060"/>
+      <text x="250" y="178" text-anchor="middle" font-size="9" fill="#5a3e2b" font-family="sans-serif">Kafuli</text>
+      <ellipse cx="450" cy="178" rx="55" ry="15" fill="#c87040"/>
+      <ellipse cx="450" cy="175" rx="50" ry="12" fill="#d88050"/>
+      <text x="450" y="178" text-anchor="middle" font-size="9" fill="#3a1a0a" font-family="sans-serif">Chainsoo</text>
+      <ellipse cx="650" cy="178" rx="55" ry="15" fill="#b8a060"/>
+      <ellipse cx="650" cy="175" rx="50" ry="12" fill="#d4bc70"/>
+      <text x="650" y="178" text-anchor="middle" font-size="9" fill="#3a2a0a" font-family="sans-serif">Bal Mithai</text>
+      <rect width="900" height="40" fill="#c8973a" opacity="0.15"/>
+      <path d="M0,20 Q45,5 90,20 Q135,35 180,20 Q225,5 270,20 Q315,35 360,20 Q405,5 450,20 Q495,35 540,20 Q585,5 630,20 Q675,35 720,20 Q765,5 810,20 Q855,35 900,20" stroke="#c8973a" stroke-width="2" fill="none"/>
+    </svg>
+    <p class="intro-text">"Uttarakhandi cuisine is the food of the mountains — simple, nourishing, flavoured with local herbs and cooked over slow fire, carrying centuries of highland wisdom in every bite."</p>
+    <p class="body-text">The cuisine of Uttarakhand reflects its terrain — hardy, wholesome, deeply connected to local produce. Traditional dishes were built around locally grown grains like mandua (finger millet), jhangora (barnyard millet), and gahat (horse gram). The food is split between Garhwali (western) and Kumaoni (eastern) traditions, each with its own distinct flavours.</p>
+    <h3 class="section-heading">Must-Try Dishes</h3>
+    <ul class="highlights">
+      <li><strong>Kafuli</strong> — creamy spinach and fenugreek curry, cooked in iron kadai</li>
+      <li><strong>Chainsoo</strong> — roasted black gram dal tempered with local spices</li>
+      <li><strong>Phanu</strong> — thick lentil soup slow-cooked over hours, Garhwali staple</li>
+      <li><strong>Aloo ke Gutke</strong> — spiced potatoes with jakhiya seeds endemic to the region</li>
+      <li><strong>Bal Mithai</strong> — Kumaoni fudge coated in white sugar pellets, a beloved sweet</li>
+      <li><strong>Buransh Sharbat</strong> — juice made from rhododendron flowers, startlingly delicious</li>
+      <li><strong>Mandua ki Roti</strong> — finger millet flatbread, nutritious and earthy in flavour</li>
+    </ul>
+    <div class="two-col">
+      <div class="col-box">
+        <h4>Garhwali Specialities</h4>
+        <ul><li>Kafuli (green curry)</li><li>Phanu (lentil soup)</li><li>Dubke (black bean curry)</li><li>Singori (leaf-wrapped sweet)</li></ul>
+      </div>
+      <div class="col-box">
+        <h4>Kumaoni Specialities</h4>
+        <ul><li>Bal Mithai (fudge)</li><li>Alu Tamatar Jhol</li><li>Rus (mixed lentils)</li><li>Bhaang ki Chutney</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 14 — GANGOTRI & YAMUNOTRI -->
+<section class="page" data-page="14">
+  <div class="page-strip">
+    <div class="page-num">14</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Char Dham</div>
+      <h2>Gangotri & Yamunotri — Source of Sacred Rivers</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#d0e0ec"/>
+      <polygon points="0,300 0,180 100,110 200,150 320,80 440,140 560,65 680,130 800,70 900,110 900,300" fill="#c8d8e8"/>
+      <polygon points="280,80 360,40 440,70 500,45 560,65 590,90 520,120 440,100 380,115 300,105" fill="white" opacity="0.9"/>
+      <polygon points="640,130 700,70 760,45 820,70 870,50 900,70 900,120 840,130 760,120 680,140" fill="white" opacity="0.85"/>
+      <path d="M300,120 Q350,150 400,175 Q450,200 500,220 Q550,240 600,265 Q650,285 700,300" stroke="#7ab8d4" stroke-width="12" fill="none" opacity="0.8"/>
+      <rect x="180" y="165" width="80" height="55" fill="#f0e060"/>
+      <polygon points="175,165 220,135 265,165" fill="#d4c040"/>
+      <rect x="620" y="170" width="70" height="55" fill="#f0e060"/>
+      <polygon points="615,170 655,142 695,170" fill="#d4c040"/>
+    </svg>
+    <p class="intro-text">"Where glaciers birth sacred rivers and ancient temples guard their cradles — Gangotri and Yamunotri are not merely pilgrimage sites; they are the origin stories of a civilization."</p>
+    <p class="body-text">Gangotri and Yamunotri are two of the four sacred Char Dhams of Uttarakhand. Yamunotri (3,293m) is the source of the Yamuna River. Gangotri (3,048m) is the origin of the Bhagirathi River, one of the main headstreams of the Ganges, flanked by the towering Bhagirathi peaks.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Gangotri Elevation</div><div class="ic-value">3,048 m</div></div>
+      <div class="info-card"><div class="ic-label">Yamunotri Elevation</div><div class="ic-value">3,293 m</div></div>
+      <div class="info-card"><div class="ic-label">Gaumukh Glacier</div><div class="ic-value">18 km from Gangotri</div></div>
+      <div class="info-card"><div class="ic-label">Season</div><div class="ic-value">May – Nov</div></div>
+    </div>
+    <h3 class="section-heading">Key Highlights</h3>
+    <ul class="highlights">
+      <li>Gaumukh — the Gangotri Glacier snout at 4,023m, actual source of Bhagirathi</li>
+      <li>Surya Kund at Yamunotri — boiling hot spring where pilgrims cook rice in pouches</li>
+      <li>Tapovan meadow — alpine meadow at 4,463m beyond Gaumukh, Shiva Lingam of snow</li>
+      <li>Harsil Valley — stunningly beautiful apple-orchard valley en route to Gangotri</li>
+      <li>Nelong Valley — restricted high-altitude valley with Trans-Himalayan landscape</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 15 — CULTURE & FESTIVALS -->
+<section class="page" data-page="15">
+  <div class="page-strip">
+    <div class="page-num">15</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Heritage & Traditions</div>
+      <h2>Kumaon & Garhwal — Culture, Art & Festivals</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#f5ead0"/>
+      <rect x="0" y="0" width="900" height="30" fill="#c8973a" opacity="0.2"/>
+      <rect x="0" y="270" width="900" height="30" fill="#c8973a" opacity="0.2"/>
+      <line x1="0" y1="15" x2="900" y2="15" stroke="#c8973a" stroke-width="1" opacity="0.5" stroke-dasharray="8,4"/>
+      <line x1="0" y1="285" x2="900" y2="285" stroke="#c8973a" stroke-width="1" opacity="0.5" stroke-dasharray="8,4"/>
+      <circle cx="200" cy="150" r="25" fill="#d4801a"/>
+      <rect x="188" y="170" width="24" height="50" fill="#e85030"/>
+      <ellipse cx="500" cy="165" rx="50" ry="20" fill="#8B6914"/>
+      <rect x="455" y="145" width="90" height="40" fill="#a0782a" rx="5"/>
+      <ellipse cx="500" cy="145" rx="50" ry="15" fill="#c8973a"/>
+      <rect x="680" y="110" width="80" height="100" fill="#f5e8c8" stroke="#c8973a" stroke-width="2"/>
+      <circle cx="720" cy="140" r="15" fill="#5aac60" opacity="0.6"/>
+      <circle cx="720" cy="155" r="10" fill="#e04030" opacity="0.5"/>
+    </svg>
+    <p class="intro-text">"The folk culture of Uttarakhand is a living museum — Aipan floor art, Pahari miniature paintings, Bairagarh weaves, and the haunting melodies of the dhol-damau kept alive in every mountain village."</p>
+    <p class="body-text">Uttarakhand's two distinct cultural regions — Kumaon in the east and Garhwal in the west — each carry their own unique artistic, musical, and festive traditions. The people of the mountains developed rich folk arts as expressions of faith, celebration, and identity in their isolated valleys.</p>
+    <div class="two-col">
+      <div class="col-box">
+        <h4>Traditional Arts</h4>
+        <ul><li>Aipan — ritual floor art in red & white</li><li>Pahari miniature painting</li><li>Ringal bamboo craft</li><li>Woollen weaving — Pattu & Thulma</li><li>Copper & brass metalwork</li></ul>
+      </div>
+      <div class="col-box">
+        <h4>Major Festivals</h4>
+        <ul><li>Kumbh Mela — Haridwar (every 12 yrs)</li><li>Phool Dei — spring flower festival</li><li>Harela — sowing season harvest fest</li><li>Ghee Sankranti — melted butter ritual</li><li>Nanda Devi Raj Jat Yatra (12-yearly)</li></ul>
+      </div>
+    </div>
+    <h3 class="section-heading">Music & Dance</h3>
+    <ul class="highlights">
+      <li>Jhora & Chholiya — Kumaoni folk dances performed at weddings and festivals</li>
+      <li>Langvir Nritya — acrobatic dance performed atop a bamboo pole</li>
+      <li>Dhol-Damau — traditional drum ensemble that defines festive processions</li>
+      <li>Jagar — shamanic ritual music to invoke mountain deities, still practised today</li>
+      <li>Bairagarh textile weaving — distinctive geometric patterns on handlooms</li>
+    </ul>
+    <div class="quote-box">
+      <p>"In Uttarakhand, the divine lives not only in temples but in the patterns drawn on courtyard floors, in the songs sung at harvest, and in the faces of people who have learned to live with mountains."</p>
+      <cite>— Ethnographic Studies, Kumaon University</cite>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 16 — MUNSIYARI -->
+<section class="page" data-page="16">
+  <div class="page-strip">
+    <div class="page-num">16</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Remote Himalayan Village</div>
+      <h2>Munsiyari — Little Kashmir of Kumaon</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#d8e8f0"/>
+      <polygon points="0,300 0,200 80,160 160,190 240,130 320,170 400,110 480,155 560,90 640,145 720,80 800,135 900,100 900,300" fill="#c8d8e4"/>
+      <polygon points="380,155 410,100 440,125 470,90 500,115 530,80 560,110 590,75 610,105 640,80 660,110 660,155" fill="#dce8f0"/>
+      <polygon points="430,125 450,90 470,90 500,115 530,80 560,110 590,75 610,105 640,80 650,100 650,125" fill="white" opacity="0.85"/>
+      <polygon points="470,90 500,65 530,80" fill="white"/>
+      <polygon points="530,80 560,55 590,75" fill="white"/>
+      <polygon points="590,75 615,50 640,80" fill="white"/>
+      <rect x="150" y="215" width="30" height="20" fill="#d4c090"/>
+      <polygon points="147,215 165,200 183,215" fill="#a08040"/>
+      <rect x="200" y="220" width="25" height="18" fill="#d4b880"/>
+      <polygon points="197,220 213,206 229,220" fill="#9a7838"/>
+      <polygon points="720,250 735,215 750,250" fill="#2c5530"/>
+      <polygon points="750,248 765,212 780,248" fill="#3d6b3a"/>
+    </svg>
+    <p class="intro-text">"Munsiyari sits at the foot of the Panchachuli — five snow peaks named for the five cooking fires of the Pandavas. The view from the bazaar at dawn is unforgettable."</p>
+    <p class="body-text">Munsiyari, meaning "Place with Snow," is a small frontier town at 2,200m in Pithoragarh district, near the Tibetan border. It is the base for some of Kumaon's most spectacular treks — Milam Glacier, Ralam Glacier, and Khaliya Top. The Panchachuli massif (five peaks, the highest at 6,904m) dominates the skyline.</p>
+    <div class="info-grid">
+      <div class="info-card"><div class="ic-label">Elevation</div><div class="ic-value">2,200 m</div></div>
+      <div class="info-card"><div class="ic-label">Best Time</div><div class="ic-value">Mar – Jun, Sep – Nov</div></div>
+      <div class="info-card"><div class="ic-label">Panchachuli Peak</div><div class="ic-value">6,904 m</div></div>
+      <div class="info-card"><div class="ic-label">District</div><div class="ic-value">Pithoragarh</div></div>
+    </div>
+    <h3 class="section-heading">Treks & Attractions</h3>
+    <ul class="highlights">
+      <li>Milam Glacier Trek (7–9 days) — through Johar Valley, former trade route to Tibet</li>
+      <li>Khaliya Top (3,500m) — day trek with full Himalayan panorama and bugiyal meadows</li>
+      <li>Birthi Falls — stunning 126m waterfall 35 km from Munsiyari</li>
+      <li>Tribal Heritage Museum — artefacts and costumes of the Bhotiya tribe</li>
+      <li>Darkot Village — ancient Bhotiya settlement with traditional stone architecture</li>
+      <li>Thamri Kund — pristine lake surrounded by oak forest, 5 km trek</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PAGE 17 — TRAVEL TIPS -->
+<section class="page" data-page="17">
+  <div class="page-strip">
+    <div class="page-num">17</div>
+    <div class="page-strip-info">
+      <div class="category">✦ Practical Guide</div>
+      <h2>Travel Tips — Planning Your Uttarakhand Journey</h2>
+    </div>
+  </div>
+  <div class="page-inner">
+    <svg class="landscape-art" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="300" fill="#ede0c4"/>
+      <path d="M0,200 Q150,195 300,185 Q450,175 600,180 Q750,185 900,170" stroke="#c8a860" stroke-width="8" fill="none" opacity="0.7"/>
+      <path d="M450,300 Q455,250 460,200 Q465,150 470,100 Q475,60 480,30" stroke="#c8a860" stroke-width="8" fill="none" opacity="0.7"/>
+      <circle cx="200" cy="190" r="10" fill="#e04030" opacity="0.8"/>
+      <circle cx="400" cy="178" r="10" fill="#e04030" opacity="0.8"/>
+      <circle cx="600" cy="182" r="10" fill="#e04030" opacity="0.8"/>
+      <circle cx="460" cy="120" r="10" fill="#e04030" opacity="0.8"/>
+      <circle cx="460" cy="55" r="10" fill="#e04030" opacity="0.8"/>
+      <circle cx="790" cy="70" r="35" fill="#e8d8b0" stroke="#c8973a" stroke-width="2"/>
+      <polygon points="790,40 795,65 790,60 785,65" fill="#c8973a"/>
+      <polygon points="790,100 795,75 790,80 785,75" fill="#888"/>
+      <polygon points="760,70 785,65 780,70 785,75" fill="#888"/>
+      <polygon points="820,70 795,65 800,70 795,75" fill="#888"/>
+      <text x="790" y="52" text-anchor="middle" font-size="9" fill="#c8973a" font-family="sans-serif" font-weight="bold">N</text>
+    </svg>
+    <p class="intro-text">"A journey to Uttarakhand requires not just a packed bag but a prepared mind — for the mountains demand patience, respect, and the willingness to slow down."</p>
+    <div class="two-col">
+      <div class="col-box">
+        <h4>Best Season by Zone</h4>
+        <ul>
+          <li>Hill stations: Mar – Jun, Sep – Nov</li>
+          <li>Char Dham: May – June, Sept – Oct</li>
+          <li>Wildlife (Corbett): Nov – June</li>
+          <li>Skiing (Auli): Jan – March</li>
+          <li>Valley of Flowers: July – Sept</li>
+        </ul>
+      </div>
+      <div class="col-box">
+        <h4>How to Reach</h4>
+        <ul>
+          <li>By Air: Jolly Grant (Dehradun), Pantnagar</li>
+          <li>By Rail: Haridwar, Rishikesh, Kathgodam, Dehradun</li>
+          <li>By Road: NH-58 (Char Dham), NH-87 (Kumaon)</li>
+          <li>Helicopter: GMVN operates Char Dham heli services</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="section-heading">Essential Tips</h3>
+    <ul class="highlights">
+      <li>Register for Char Dham Yatra online at registrationandtouristcare.uk.gov.in before travelling</li>
+      <li>Carry altitude sickness medication (Diamox) if going above 3,000m</li>
+      <li>Mountain roads can close in monsoon (July–Aug) — always check NHAI updates</li>
+      <li>Inner Line Permit required for areas near China border (Milam, Nelong Valley)</li>
+      <li>Uttarakhand is vegetarian-friendly — most dhabas near temples are pure-veg</li>
+      <li>Respect wildlife and carry bags for your waste — Leave No Trace principles</li>
+      <li>Local STD code: Dehradun (0135), Nainital (05942), Haridwar (01334)</li>
+      <li>Tourist helpline: 1364 (Uttarakhand Tourism)</li>
+    </ul>
+    <div class="quote-box">
+      <p>"The mountains are calling and I must go — and I will be back again and again, for in these hills I have left pieces of my soul."</p>
+      <cite>— Adapted from John Muir, now the sentiment of every Pahadi traveller</cite>
+    </div>
+    <div class="info-grid" style="margin-top:2rem;">
+      <div class="info-card"><div class="ic-label">State Capital</div><div class="ic-value">Dehradun</div></div>
+      <div class="info-card"><div class="ic-label">Districts</div><div class="ic-value">13</div></div>
+      <div class="info-card"><div class="ic-label">State Flower</div><div class="ic-value">Brahmakamal</div></div>
+      <div class="info-card"><div class="ic-label">State Bird</div><div class="ic-value">Himalayan Monal</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PAGINATION ════ -->
+<nav class="pagination-wrap" id="pagination" aria-label="Page navigation"></nav>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  Crafted with love for <span>Dev Bhoomi — Uttarakhand</span> &nbsp;|&nbsp; Jai Badri Vishal · Jai Kedarnath
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
